@@ -224,64 +224,19 @@ var gameComponent = function () {
 
 	this.scoreLetters = {};
 	this.words = [
-		{ he: 'חבר', en: 'friend', category: '' },
-		{ he: 'כיתה', en: 'grade', category: '' },
-		{ he: 'בית', en: 'house', category: '' },
-		{ he: 'חדש', en: 'new', category: '' },
-		{ he: 'בית ספר ', en: 'school', category: '' },
-		{ he: 'מורה', en: 'teacher', category: '' },
-		{ he: 'עיר', en: 'town', category: '' },
-		{ he: 'היכן אתה גר?', en: 'where do you live?', category: '' },
-		{ he: 'אני גר ב...', en: 'I live in', category: '' },
-		{ he: 'ציפור', en: 'bird', category: '' },
-		{ he: 'אח', en: 'brother', category: '' },
-		{ he: 'אנגלית', en: 'english', category: '' },
-		{ he: 'משפחה', en: 'family', category: '' },
-		{ he: 'לעוף', en: 'fly', category: '' },
-		{ he: 'שיעור', en: 'lesson', category: '' },
-		{ he: 'נחמד, יפה', en: 'nice', category: '' },
-		{ he: 'אחות', en: 'sister', category: '' },
-		{ he: 'לדבר, לשוחח', en: 'talk', category: '' },
-		{ he: 'לרצות', en: 'want', category: '' },
-		{ he: 'בן כמה אתה?', en: 'how old are you?', category: '' },
-		{ he: 'אני בן..', en: 'I am …  years old.', category: '' },
-		{ he: 'אני לומד בבית ספר', en: 'I go to school', category: '' },
-		{ he: 'לוח', en: 'board', category: '' },
-		{ he: 'ספר', en: 'book', category: '' },
-		{ he: 'כיסא', en: 'chair', category: '' },
-		{ he: 'מחק', en: 'ereaser', category: '' },
-		{ he: 'שיעורי בית', en: 'homework', category: '' },
-		{ he: 'ארוחת צהריים', en: 'lunch', category: '' },
-		{ he: 'צריך', en: 'need', category: '' },
-		{ he: 'מחברת', en: 'notebook', category: '' },
-		{ he: 'נייר', en: 'paper', category: '' },
-		{ he: 'עיפרון', en: 'pencil', category: '' },
-		{ he: 'תודה', en: 'thanks', category: '' },
-		{ he: 'האם יש לך?', en: 'do you have', category: '' },
-		{ he: 'אין לי...', en: 'I don’t have', category: '' },
-		{ he: 'בואי נלך....', en: "Let's go", category: '' },
-		{ he: 'כתובת', en: 'address', category: '' },
-		{ he: 'אוכל', en: 'food', category: '' },
-		{ he: 'לי, אותי', en: 'me', category: '' },
-		{ he: 'לפגוש', en: 'meet', category: '' },
-		{ he: 'מספר טלפון', en: 'phone number', category: '' },
-		{ he: 'בבקשה', en: 'please', category: '' },
-		{ he: 'תלמיד', en: 'pupil', category: '' },
-		{ he: 'לראות', en: 'see', category: '' },
-		{ he: 'רחוב', en: 'street', category: '' },
-		{ he: 'לכתוב', en: 'write', category: '' },
-		{ he: 'מה ה...  שלך?', en: '', category: '' },
-		{ he: 'זה רחוב...', en: '', category: '' },
-		{ he: 'אומנות', en: 'art', category: '' },
-		{ he: 'כיתה', en: 'grade', category: '' },
-		{ he: 'מחשב', en: 'computer', category: '' },
-		{ he: 'יום', en: 'day', category: '' },
-		{ he: 'שמח', en: 'happy', category: '' },
-		{ he: 'ללמוד', en: 'learn', category: '' },
-		{ he: 'מתמטיקה', en: 'math', category: '' },
-		{ he: 'מוזיקה', en: 'music', category: '' },
-		{ he: 'ספורט', en: 'sport', category: '' },
-		{ he: 'שבוע', en: 'week', category: '' },
+		{ he: 'עץ', en: '', image: 'https://media.istockphoto.com/id/543052538/photo/tree.jpg?b=1&s=170667a&w=0&k=20&c=mSP8NiJYT5qBEzOwkMFWE-qIeJpKThwLNlob6H0cGJI=', category: '' },
+		{ he: 'גזע', en: '', image: 'https://bshare-group.co.il/images/detailed/8/3049671766.webp', category: '' },
+		{ he: 'ענף', en: '', image: 'https://cdn.w600.comps.canstockphoto.co.il/%D7%99%D7%A8%D7%95%D7%A7-%D7%A2%D7%95%D7%96%D7%91-%D7%95%D7%A7%D7%98%D7%95%D7%A8-%D7%A2%D7%A0%D7%A3-%D7%A9%D7%9C-%D7%A2%D7%A5-%D7%95%D7%A7%D7%98%D7%95%D7%A8-%D7%90%D7%99%D7%A4%D7%A1%D7%90%D7%A1_csp51743647.jpg', category: '' },
+		{ he: 'עלה', en: '', image: 'https://img.lovepik.com/free-png/20211228/lovepik-green-leaf-png-image_400953250_wh300.png', category: '' },
+		{ he: 'גבעול', en: '', image: 'https://lcp.co.il/wp-content/uploads/2022/03/1051364-gfk2sa-3-700x700.jpg', category: '' },
+		{ he: 'קרקע', en: '', image: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Duerre.jpg', category: '' },
+		{ he: 'ערוגה', en: '', image: 'https://www.tokeep.co.il/images/article-pictures/5b8d03090f053a7b7e8b4568/assossss_1_thumb.jpg', category: '' },
+		{ he: 'סלע', en: '', image: 'https://d15djgxczo4v72.cloudfront.net/s3fs-public/styles/inner_page_header/public/legacy_files/Rock_0.jpg?itok=Qm_f-AxY', category: '' },
+		{ he: 'נטיעות', en: '', image: 'https://img.lovepik.com/photo/40010/7911.jpg_wh860.jpg', category: '' },
+		{ he: 'עציץ', en: '', image: 'https://www.irit-flowers.co.il/wp-content/uploads/2021/11/file_1_3.jpg', category: '' },
+		{ he: 'יער', en: '', image: 'https://images1.ynet.co.il/PicServer5/2017/02/27/7615640/76156180100892640360no.jpg', category: '' },
+		{ he: 'עדר', en: '', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/FarmingZambia.jpg/150px-FarmingZambia.jpg', category: '' },
+
 
 	]
 
@@ -299,7 +254,7 @@ var gameComponent = function () {
 			this.startSpeech();
 		if (this.gameCards.length == 0)
 			this.words.forEach((w, i) => {
-				this.gameCards.push(new card(i, w.en, w.he, w));
+				this.gameCards.push(new card(i, w.he, w.image, w));
 
 
 			})

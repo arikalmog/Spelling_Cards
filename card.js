@@ -1,4 +1,4 @@
-var card = function (cardNumber, backText, frontText, word) {
+var card = function (cardNumber, backText, frontImage, word) {
     this.id =
         this.number = cardNumber;
     this.cardElement;
@@ -6,7 +6,7 @@ var card = function (cardNumber, backText, frontText, word) {
     this.unselected = new customEvent();
     this.isOpen = false;
     this.backText = backText;
-    this.frontText = frontText;
+    this.frontImage = frontImage;
     this.state = "";
     this.word = word;
     this.success = function () {
@@ -47,14 +47,14 @@ var card = function (cardNumber, backText, frontText, word) {
             this.cardElement.classList.add("flip-me");
     };
     this.set = function () {
-
+debugger;
         this.cardElement = document.createElement("div");
         this.cardElement.classList.add("flip-card");
         this.cardElement.onclick = () => { this.select() };
         this.cardElement.innerHTML =
             '<div id="c' + this.id + '" class="flip-card-inner">' +
             '<div class="flip-card-front">' +
-            '<div id="front-text">' + this.frontText + '</div>' +
+            '<div id="front-text"><img src="' + this.frontImage + '"></div>' +
             '</div>' +
             '<div class="flip-card-back">' +
             '<div id="back-text">' + this.backText + '</div>' +
