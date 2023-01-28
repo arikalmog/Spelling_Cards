@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    </style>
+    <script src="./card.js"></script>
+    <script src="./engGame.js"></script>
+
+    <script src="./event.js"></script>
+</head>
+
+<body>
+	
+    <div id="gameBoard" class="game">
+        <div class="gameHeader">
+            <button onclick="gamePlay.startGame()">Start Game</button>
+            <div id="pairsFound"></div>
+			<div id="turns"></div>
+			
+			<button onclick="gamePlay.record()">הקלט</button>
+			<button onclick="gamePlay.startSpeech()">זהה קול</button>
+			<button onclick="gamePlay.startGame()">אַנְגְּלִית</button>
+			<div id="recstatus"></div>
+        </div>
+        <div id="gameBody" class="gameBody"></div>
+
+    </div>
+	<!-- div id="instructions">3333</div>
+	<div id="word"></div>
+	<img id="img-word"/ 
+	<div id="speech"></div>
+    <div id="gameWon" class="gameWon">Well Done!!!  You did it!!!</div>-->
+	<div id="score">
+		<div id="score-res"></div>
+		<button onclick="gamePlay.addScore()">הצלחתי</button>
+		<button onclick="gamePlay.subScore()">בפעם הבאה</button>
+	</div>
+	<div id="engGame">
+		<!-- <div id="current"></div> -->
+	</div>
+	<div id="timer"></div>
+	<div id="deck"></div>
+	<div class="math-board" id="mathBoard"></div>
+	<div id="letters"></div>
+</body>
+
+</html>

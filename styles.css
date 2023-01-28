@@ -1,0 +1,231 @@
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0px;
+}
+
+.math-board {
+  display: flex;
+  flex-flow: column;
+}
+
+.math-board .math-row {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin: 2px;
+
+}
+
+.math-board .math-row .math-col {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #00000050;
+  border-radius: 4px;
+  margin: 2px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.math-board .math-row .math-col.math-header {
+  font-weight: bold;
+
+}
+
+.math-board .math-row .math-col.correct {
+  background-color: green;
+}
+
+.math-board .math-row .math-col.fail {
+  background-color: red;
+
+}
+
+.flip-card {
+  cursor: pointer;
+  background-color: #fff;
+  width: 225px;
+  height: 150px;
+  perspective: 1000px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 5px;
+  transition: all 0.6s;
+  transform-style: preserve-3d;
+  padding: 5px;
+  border: 1px solid #333333;
+
+}
+
+.flip-card.success {
+  position: absolute;
+  top: calc(100% - 200px);
+  left: 0;
+}
+
+.flip-card.fail {
+  position: absolute;
+  top: calc(100% - 200px);
+  left: calc(100% - 230px);
+}
+
+.flip-card.current {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 115px);
+}
+
+.flip-card:hover {
+  -webkit-box-shadow: 6px 8px 24px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 8px 24px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 8px 24px -15px rgba(0, 0, 0, 0.75);
+}
+
+.flip-card-inner {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-me {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#speech {
+  font-size: 40px;
+  height: calc(100% - 80px);
+  overflow: auto;
+}
+
+.flip-card-front {
+  z-index: 2;
+}
+
+.card-row {
+  display: flex;
+  flex-flow: row;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+img {
+  border-radius: 10px;
+  width: 150px;
+  height: 225px;
+}
+
+.game {
+  display: flex;
+  flex-flow: column;
+}
+
+.gameHeader {
+  height: 30px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: -1px 6px 5px -1px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: -1px 6px 5px -1px rgba(0, 0, 0, 0.20);
+  box-shadow: -1px 6px 5px -1px rgba(0, 0, 0, 0.20);
+  display: flex;
+  flex-flow: row;
+  justify-items: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.gameHeader button {
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#pairsFound {
+  font-size: 20px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.gameWon {
+  display: none;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #cccccc;
+  color: #fff;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.gameWon.done {
+  display: block;
+}
+
+#score {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: auto;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.good {
+  color: green;
+}
+
+.not-good {
+  color: red;
+}
+
+#engGame {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+#deck,
+#timer {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#engGame #current {
+  cursor: pointer;
+  background-color: transparent;
+  width: 400px;
+  font-size: 130px;
+  height: 125px;
+  perspective: 1000px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 5px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  padding: 5px;
+  border: 1px solid #333333;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
